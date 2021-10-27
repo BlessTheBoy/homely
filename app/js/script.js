@@ -1,33 +1,23 @@
 console.log("HELLO");
 
-i18next.use(i18nextBrowserLanguageDetector).init(
-  {
-    fallbackLng: "en",
-    debug: true,
-    resources: {
-      en: {
-        translation: {
-          title: "hello world",
-          test: "Testing with resources",
-          saveBtn: "save button",
-          info: "random info",
-        },
-      },
-      de: {
-        translation: {
-          title: "hello world in de",
-          test: "lalneonoeij eioeo",
-          saveBtn: "save but",
-          info: "iklenlof",
-        },
+i18next
+  .use(i18nextHttpBackend)
+  .use(i18nextBrowserLanguageDetector)
+  .init(
+    {
+      fallbackLng: "en",
+      debug: true,
+      ns: "backend-app",
+      defaultNS: "backend-app",
+      backend: {
+        loadPath: "../app/assets/localizedContent/{{lng}}.json",
       },
     },
-  },
-  function (err, t) {
-    // init set content
-    updateContent();
-  }
-);
+    function (err, t) {
+      // init set content
+      updateContent();
+    }
+  );
 
 // just set some content and react to language changes
 // could be optimized using vue-i18next, jquery-i18next, react-i18next, ...
