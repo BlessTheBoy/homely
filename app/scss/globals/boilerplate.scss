@@ -1,15 +1,59 @@
+@use "../util" as *;
+
 html {
-	font-size: 100%;
-	box-sizing: border-box;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-	margin: 0;
-	padding: 0;
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  object-fit: contain;
+}
+
+.large {
+  display: none !important;
+}
+
+.med-desk {
+  display: none !important;
+}
+
+@include breakpoint(medium) {
+  .med-desk {
+    display: initial !important;
+  }
+  .mobile {
+    display: none !important;
+  }
+}
+
+@include breakpoint(large) {
+  .large {
+    display: initial !important;
+  }
+  .medium {
+    display: none !important;
+  }
 }

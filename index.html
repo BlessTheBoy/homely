@@ -23,26 +23,52 @@
     <script defer src="/dist/script.js"></script>
   </head>
   <body>
-    <header style="background-color: blue">
-      <div class="container">
-        <img src="assets/Logo.png" alt="Homely Logo" />
+    <header class="header">
+      <div class="container navbar">
+        <a href="/" class="header__logo"
+          ><img src="assets/Logo.png" alt="Homely Logo"
+        /></a>
 
         <!-- Hambuger menu -->
-        <div class="menuBtns">
-          <img src="assets/icon-hamburger.svg" alt="open menu" />
-          <img src="assets/icon-close-menu.svg" alt="close menu" />
+        <div class="header__menuControls" id="menuControls">
+          <img
+            src="assets/icon-hamburger.svg"
+            alt="open menu"
+            class="burger"
+            id="burger"
+            width="16"
+            height="15"
+          />
+          <img
+            src="assets/icon-close-menu.svg"
+            alt="close menu"
+            class="closeMenu"
+            id="closeMenu"
+            width="14"
+            height="15"
+          />
         </div>
 
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">Services</a></li>
-            <li><a href="/contact">About Us</a></li>
-            <li><a href="/login">Blog</a></li>
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="navlink"><a href="#">HOME</a></li>
+            <li class="navlink"><a href="#">SERVICES</a></li>
+            <li class="navlink"><a href="#">ABOUT US</a></li>
+            <li class="navlink"><a href="#">BLOG</a></li>
           </ul>
 
-          <div class="optionsWrap">
-            <div class="searchWrap">
+          <div class="nav__options">
+            <div class="localization">
+              <!-- Change page language -->
+              <select name="language" id="language">
+                <option value="en">ENG</option>
+                <option value="es">SPN</option>
+                <option value="fr">FRA</option>
+                <option value="de">DUS</option>
+              </select>
+            </div>
+
+            <div class="search">
               <!-- <form action="/search" method="get">
 						<input type="text" name="search" placeholder="Search">
 						<button type="submit">Search</button>
@@ -57,29 +83,17 @@
               >
                 <path
                   d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-                  stroke="white"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />
                 <path
                   d="M15.75 15.75L12.4875 12.4875"
-                  stroke="white"
                   stroke-width="2"
                   stroke-linecap="square"
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
-
-            <div class="localization">
-              <!-- Change page language -->
-              <select name="language" id="language">
-                <option value="en">ENG</option>
-                <option value="es">SPN</option>
-                <option value="fr">FRA</option>
-                <option value="de">DUS</option>
-              </select>
             </div>
           </div>
         </nav>
