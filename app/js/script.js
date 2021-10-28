@@ -10,7 +10,7 @@ i18next
       ns: "backend-app",
       defaultNS: "backend-app",
       backend: {
-        loadPath: "../app/assets/localizedContent/{{lng}}.json",
+        loadPath: "../assets/localizedContent/{{lng}}.json",
       },
     },
     function (err, t) {
