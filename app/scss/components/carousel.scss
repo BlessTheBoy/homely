@@ -34,6 +34,31 @@
         font-weight: normal;
         font-size: rem(15);
         line-height: rem(35);
+
+        &-bar {
+          width: rem(278);
+          height: rem(1);
+          background-color: rgba($color: #000000, $alpha: 0.4);
+          position: relative;
+
+          &::before {
+            content: "";
+            width: calc((1 / var(--no-of-carousel-image)) * 100%);
+            height: rem(3);
+            background: var(--black);
+            opacity: 1;
+            position: absolute;
+            left: calc(
+              (
+                  (var(--current-carousel-image) - 1) /
+                    var(--no-of-carousel-image)
+                ) * 100%
+            );
+            top: 50%;
+            transform: translateY(-50%);
+            transition: left ease-in-out 0.3s;
+          }
+        }
       }
     }
 

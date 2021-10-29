@@ -1,3 +1,11 @@
+const slides = document.getElementsByClassName("mySlides");
+const currentImg = document.getElementById("currentImg");
+document.getElementById("totalImg").innerHTML = slides.length;
+document.documentElement.style.setProperty(
+  "--no-of-carousel-image",
+  slides.length
+);
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -17,8 +25,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -29,4 +36,9 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+  currentImg.innerHTML = slideIndex;
+  document.documentElement.style.setProperty(
+    "--current-carousel-image",
+    slideIndex
+  );
 }
