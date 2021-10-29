@@ -1,0 +1,71 @@
+@use "../util" as *;
+
+.designs {
+  background: var(--pastel-green);
+  color: var(--white);
+  padding-top: rem(111);
+
+  .design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "text image" ". details";
+    align-items: end;
+    margin-bottom: rem(242);
+
+    &-text {
+      grid-area: text;
+      font-family: var(--sans);
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem(20);
+      line-height: rem(40);
+      padding-right: rem(122);
+
+      h2 {
+        font-family: var(--display);
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(60);
+        line-height: rem(70);
+        margin-bottom: rem(169);
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        align-items: flex-start;
+      }
+    }
+    &-details {
+      grid-area: details;
+      margin-top: rem(95);
+
+      &:first-child {
+        margin-right: rem(123);
+      }
+    }
+    &-img {
+      grid-area: image;
+      width: 100%;
+    }
+  }
+  .portfolio {
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto;
+    // grid-area: "text img" "button img";
+    // align-items: center;
+
+    &-text {
+      grid-area: text;
+    }
+    &-link {
+      grid-area: button;
+    }
+    &-img {
+      grid-area: img;
+      width: 100%;
+    }
+  }
+}
