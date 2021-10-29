@@ -1,0 +1,43 @@
+@use "../util" as *;
+
+.services {
+  .container {
+    padding-bottom: rem(63);
+    padding-top: rem(92);
+    text-align: center;
+  }
+  ul {
+    text-align: left;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 12.5%;
+    margin-bottom: rem(64);
+    p {
+      font-family: var(--sans);
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem(17);
+      line-height: rem(30);
+      color: #a9a39e;
+    }
+    strong p {
+      margin: rem(20) 0;
+      font-family: var(--lato);
+      font-style: normal;
+      font-weight: normal;
+      font-size: rem(20);
+      line-height: rem(24);
+      color: var(--black);
+    }
+  }
+  a {
+    &:hover {
+      color: var(--pastel-green);
+
+      &::before {
+        background-color: var(--pastel-green);
+      }
+    }
+  }
+}
