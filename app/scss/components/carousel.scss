@@ -1,6 +1,7 @@
 @use "../util" as *;
 
 .carousel {
+  margin-top: rem(-208);
   .slideshow {
     &-container {
       width: 100%;
@@ -21,6 +22,10 @@
           cursor: pointer;
           width: rem(29);
           margin-right: rem(87);
+
+          &:hover svg {
+            stroke: var(--pastel-pink);
+          }
         }
       }
 
