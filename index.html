@@ -20,10 +20,12 @@
 
     <!-- Main stylesheet and script -->
     <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/localization.js"></script>
+    <script defer src="/dist/carousel.js"></script>
     <script defer src="/dist/script.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container navbar">
         <a href="/" class="header__logo"
           ><img src="assets/Logo.png" alt="Homely Logo"
@@ -109,6 +111,34 @@
             homely services for all our clients.
           </p>
           <a href="#services">View Services</a>
+        </div>
+      </section>
+      <section class="carousel" id="carousel">
+        <div class="container">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="assets/img1.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/img2.jpg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/img3.jpg" style="width: 100%" />
+            </div>
+          </div>
+          <br />
+
+          
+
+          <div class="controls">
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
         </div>
       </section>
     </main>
