@@ -1,10 +1,49 @@
 @use "../util" as *;
 
 .carousel {
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  .slideshow {
+    &-container {
+      width: 100%;
+      // max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    &-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(76) 0 rem(62);
+
+      .controls {
+        .prev,
+        .next {
+          cursor: pointer;
+          width: rem(29);
+          margin-right: rem(87);
+        }
+      }
+
+      .progress {
+        display: flex;
+        align-items: center;
+        gap: rem(10);
+
+        font-family: var(--lato);
+        font-style: normal;
+        font-weight: normal;
+        font-size: rem(15);
+        line-height: rem(35);
+      }
+    }
+
+    &-text {
+      font-family: var(--sans);
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(25);
+      line-height: rem(40);
+    }
   }
 
   /* Hide the images by default */
@@ -13,21 +52,21 @@
   }
 
   /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    // position: absolute;
-    // top: 50%;
-    width: auto;
-    margin-top: 22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+  // .prev,
+  // .next {
+  //   cursor: pointer;
+  //   // position: absolute;
+  //   // top: 50%;
+  //   width: auto;
+  //   margin-top: 22px;
+  //   padding: 16px;
+  //   color: black;
+  //   font-weight: bold;
+  //   font-size: 18px;
+  //   transition: 0.6s ease;
+  //   border-radius: 0 3px 3px 0;
+  //   user-select: none;
+  // }
 
   /* Fading animation */
   .fade {

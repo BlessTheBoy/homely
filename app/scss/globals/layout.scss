@@ -11,9 +11,9 @@ body {
   width: 100%;
   padding-bottom: rem(100);
 
-  @include breakpoint(medium) {
-    padding: rem(48);
-  }
+  // @include breakpoint(medium) {
+  //   padding: rem(48);
+  // }
 
   @include breakpoint(large) {
     padding: 0;
