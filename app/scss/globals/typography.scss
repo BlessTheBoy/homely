@@ -4,7 +4,6 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  line-height: 1.1;
 }
 
 a,
@@ -15,4 +14,14 @@ a:active {
 
 p {
   font-family: var(--sans);
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: var(--display);
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(80);
+  line-height: rem(90);
 }
