@@ -1,0 +1,57 @@
+@use "../util" as *;
+
+.footer {
+  font-family: var(--poppins);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: var(--pastel-green);
+  color: white;
+  padding: rem(100) 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    grid-template-rows: rem(60) auto auto auto;
+    grid-template-areas:
+      "lg cp le rs"
+      "ad cp le rs"
+      "sc . . .";
+    column-gap: 4rem;
+    align-items: start;
+
+    .footer-socials {
+      margin-top: 2rem;
+      grid-area: sc;
+      display: flex;
+      gap: 2rem;
+      svg {
+        fill: white;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+          fill: var(--pastel-pink);
+        }
+      }
+    }
+    .footer-logo {
+      grid-area: lg;
+    }
+    .footer-address {
+      grid-area: ad;
+    }
+    .footer-company {
+      grid-area: cp;
+    }
+    .footer-resources {
+      grid-area: rs;
+    }
+    .footer-legal {
+      grid-area: le;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+}
