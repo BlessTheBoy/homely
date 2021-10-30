@@ -4,6 +4,11 @@
   background: var(--pastel-green);
   color: var(--white);
   padding-top: rem(111);
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: normal;
+  font-size: rem(20);
+  line-height: rem(40);
 
   .design {
     display: grid;
@@ -15,11 +20,6 @@
 
     &-text {
       grid-area: text;
-      font-family: var(--sans);
-      font-style: normal;
-      font-weight: normal;
-      font-size: rem(20);
-      line-height: rem(40);
       padding-right: rem(122);
 
       h2 {
@@ -52,19 +52,17 @@
   }
   .portfolio {
     display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-rows: auto;
-    // grid-area: "text img" "button img";
-    // align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
 
     &-text {
-      grid-area: text;
-    }
-    &-link {
-      grid-area: button;
+      &:first-child {
+        margin-right: rem(123);
+      }
+      margin-bottom: rem(95);
     }
     &-img {
-      grid-area: img;
       width: 100%;
     }
   }
