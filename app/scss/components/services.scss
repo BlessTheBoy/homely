@@ -32,6 +32,9 @@
     }
   }
   a {
+    &::before {
+      background-color: var(--pastel-green);
+    }
     &:hover {
       color: var(--pastel-green);
 

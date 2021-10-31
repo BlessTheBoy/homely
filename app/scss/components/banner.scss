@@ -4,6 +4,8 @@
   background: var(--pastel-green);
   padding-bottom: rem(208);
   color: var(--white);
+  position: relative;
+
   &-content {
     text-align: center;
     margin: 0 auto;
@@ -19,5 +21,24 @@
       margin: 0 auto rem(50);
       max-width: 88%;
     }
+    a.btn {
+      &::before {
+        background: var(--pastel-green);
+      }
+
+      &:hover::before {
+        background: var(--pastel-pink);
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+  &-progress {
+    position: absolute;
+    height: 70%;
+    top: 15%;
+    left: rem(-35);
   }
 }

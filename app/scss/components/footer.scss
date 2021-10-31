@@ -51,7 +51,18 @@
     }
   }
 
+  div > p {
+    font-weight: bold;
+    font-size: rem(20);
+    line-height: rem(32);
+    margin-bottom: rem(10);
+  }
+
   ul {
     list-style: none;
+
+    li a:hover {
+      color: var(--pastel-pink);
+    }
   }
 }

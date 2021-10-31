@@ -10,6 +10,16 @@
   font-size: rem(20);
   line-height: rem(40);
 
+  .container {
+    position: relative;
+  }
+  &-decor {
+    position: absolute;
+    height: 70%;
+    top: 15%;
+    left: rem(-35);
+  }
+
   .design {
     display: grid;
     grid-template-columns: 1fr 1fr;
