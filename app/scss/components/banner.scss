@@ -35,14 +35,18 @@
     }
   }
 
-  .container {
-    position: relative;
-  }
   &-progress {
     position: absolute;
     height: 70%;
     top: 15%;
     left: rem(-5);
     transform: translateX(-100%);
+  }
+
+  @include breakpoint(medium) {
+    font-size: 0.8rem;
+  }
+  @include breakpoint(large) {
+    font-size: 1rem;
   }
 }
