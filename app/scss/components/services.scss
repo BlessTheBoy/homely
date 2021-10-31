@@ -1,9 +1,10 @@
 @use "../util" as *;
 
 .services {
+  font-size: 1rem;
   .container {
-    padding-bottom: rem(63);
-    padding-top: rem(92);
+    padding-bottom: em(63);
+    padding-top: em(92);
     text-align: center;
   }
   ul {
@@ -12,13 +13,17 @@
     display: flex;
     justify-content: space-between;
     gap: 12.5%;
-    margin-bottom: rem(64);
+    margin-bottom: em(64);
+
+    img {
+      width: em(60);
+    }
     p {
       font-family: var(--sans);
       font-style: normal;
       font-weight: normal;
-      font-size: rem(17);
-      line-height: rem(30);
+      font-size: em(17);
+      line-height: 1.76;
       color: #a9a39e;
     }
     strong p {
@@ -26,8 +31,8 @@
       font-family: var(--lato);
       font-style: normal;
       font-weight: normal;
-      font-size: rem(20);
-      line-height: rem(24);
+      font-size: em(20);
+      line-height: 1.2;
       color: var(--black);
     }
   }
@@ -42,5 +47,12 @@
         background-color: var(--pastel-green);
       }
     }
+  }
+
+  @include breakpoint(medium) {
+    font-size: 0.8rem;
+  }
+  @include breakpoint(large) {
+    font-size: 1rem;
   }
 }
