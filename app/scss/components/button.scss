@@ -7,10 +7,10 @@ button,
   font-style: normal;
   font-weight: 500;
   font-size: rem(15);
-  line-height: rem(35);
+  line-height: 2.3;
   letter-spacing: -0.03em;
   color: var(--pastel-green);
-  padding: rem(12) rem(46);
+  padding: em(12) em(46);
   background: var(--pastel-pink);
   transition: all ease-out 0.1s;
   @include hover-line(var(--pastel-pink));

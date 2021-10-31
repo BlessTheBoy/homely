@@ -1,8 +1,9 @@
 @use "../util" as *;
 
 .banner {
+  font-size: 1rem;
   background: var(--pastel-green);
-  padding-bottom: rem(208);
+  padding-bottom: em(208);
   color: var(--white);
   position: relative;
 
@@ -10,15 +11,17 @@
     text-align: center;
     margin: 0 auto;
     max-width: rem(700);
-    padding: rem(100) 0;
+    padding: em(100) 0;
 
     h2 {
-      margin: 0 auto rem(30);
+      margin: 0 auto em(6);
+      font-size: em(80);
+      line-height: 1.125;
     }
     p {
-      font-size: rem(22);
-      line-height: rem(35);
-      margin: 0 auto rem(50);
+      font-size: em(22);
+      line-height: 1.59;
+      margin: 0 auto em(36);
       max-width: 88%;
     }
     a.btn {
