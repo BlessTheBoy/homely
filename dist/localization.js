@@ -1,0 +1,2 @@
+"use strict";function updateContent(){document.querySelectorAll("[data-i18n]").forEach((function(n){var e=n.id;n.innerHTML=i18next.t(e)}))}function changeLng(n){i18next.changeLanguage(n)}i18next.use(i18nextHttpBackend).use(i18nextBrowserLanguageDetector).init({fallbackLng:"en",debug:!0,ns:"backend-app",defaultNS:"backend-app",backend:{loadPath:"../assets/localizedContent/{{lng}}.json"}},(function(n,e){updateContent()})),i18next.on("languageChanged",(function(){updateContent()}));
+//# sourceMappingURL=localization.js.map
