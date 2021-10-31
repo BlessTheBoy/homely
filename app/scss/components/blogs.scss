@@ -97,15 +97,5 @@
   }
   @include breakpoint(xlarge) {
     font-size: 1rem;
-    .design {
-      grid-template-columns: 1fr minmax(614px, 1fr);
-
-      &-details:first-child {
-        margin-right: em(40);
-      }
-    }
-    .portfolio {
-      grid-template-columns: 1fr minmax(614px, 1fr);
-    }
   }
 }

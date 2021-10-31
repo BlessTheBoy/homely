@@ -5,15 +5,15 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.8;
   background-color: var(--pastel-green);
   color: white;
   padding: rem(100) 0;
 
   .content {
     display: grid;
-    grid-template-columns: 40% 1fr 1fr 1fr;
-    grid-template-rows: rem(60) auto auto auto;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: em(60) auto auto auto;
     grid-template-areas:
       "lg cp le rs"
       "ad cp le rs"
@@ -53,9 +53,9 @@
 
   div > p {
     font-weight: bold;
-    font-size: rem(20);
-    line-height: rem(32);
-    margin-bottom: rem(10);
+    font-size: em(17);
+    line-height: 1.6;
+    margin-bottom: em(8);
   }
 
   ul {
@@ -64,5 +64,18 @@
     li a:hover {
       color: var(--pastel-pink);
     }
+  }
+
+  @include breakpoint(medium) {
+    font-size: 0.9rem;
+  }
+  @include breakpoint(large) {
+    font-size: 1rem;
+    .content {
+      grid-template-columns: 40% 1fr 1fr 1fr;
+    }
+  }
+  @include breakpoint(xlarge) {
+    font-size: rem(18);
   }
 }

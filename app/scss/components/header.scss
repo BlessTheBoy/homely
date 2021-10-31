@@ -59,11 +59,11 @@
           color: #000;
           display: inline-block;
           width: 100%;
-          padding: rem(24);
+          padding: em(24);
           font-family: var(--sans);
           font-style: normal;
           font-weight: 500;
-          font-size: rem(15);
+          font-size: em(15);
           line-height: 1.2;
           overflow: hidden;
           transition: all ease-in-out 0.3s;
@@ -87,7 +87,7 @@
           outline: none;
           color: var(--white);
           border: none;
-          font-size: 1em;
+          font-size: em(15);
 
           option {
             color: var(--black);
@@ -158,7 +158,7 @@
         border-radius: 0;
         display: flex;
         align-items: center;
-        gap: em(56);
+        gap: em(45);
 
         .navlink {
           border: none;
@@ -175,5 +175,11 @@
   }
   @include breakpoint(large) {
     font-size: 1rem;
+
+    .nav {
+      &-list {
+        gap: em(56);
+      }
+    }
   }
 }
