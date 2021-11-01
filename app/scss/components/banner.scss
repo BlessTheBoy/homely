@@ -1,9 +1,9 @@
 @use "../util" as *;
 
 .banner {
-  font-size: 1rem;
+  font-size: 0.72rem;
   background: var(--pastel-green);
-  padding-bottom: em(208);
+  padding-bottom: rem(208);
   color: var(--white);
   position: relative;
 
