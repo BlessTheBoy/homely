@@ -43,11 +43,9 @@
     },
     "design": {
       "1": {
-        "date": "2021",
-        "details": "The Tropical Musuem for Innovation, Sydney"
+        "details": "The Tropical Museum for Innovation, Sydney"
       },
       "2": {
-        "date": "2021",
         "details": "Geronimo Barzagli Architecture Studios"
       }
     },
@@ -59,18 +57,15 @@
     "list": {
       "1": {
         "category": "Top Read",
-        "title": "Getting the best Home Fittings",
-        "author": "Ezekiel Josephat"
+        "title": "Getting the best Home Fittings"
       },
       "2": {
         "category": "Editor's Pick",
-        "title": "Interior Design Trends for 2021",
-        "author": "David Adegoke"
+        "title": "Interior Design Trends for 2021"
       },
       "3": {
         "category": "Latest Read",
-        "title": "How to style homes for newly weds",
-        "author": "Folarin Chukwuebuka"
+        "title": "How to style homes for newly weds"
       }
     },
     "button": "Our Blog"

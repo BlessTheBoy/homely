@@ -1,9 +1,4 @@
 {
-  "title": "hello world in de",
-  "test": "lalneonoeij eioeo",
-  "saveBtn": "save but",
-  "info": "iklenlof",
-
   "header": {
     "nav": {
       "1": "Huis",
@@ -16,5 +11,94 @@
     "header": "Nieuwe thuiservaringen creëren",
     "description": "Wij zijn een interieurbedrijf en we maken graag verse en huiselijke diensten voor al onze klanten.",
     "button": "Bekijk diensten"
+  },
+
+  "carousel": {
+    "description": "Onze diensten zijn op maat gemaakt voor de behoeften, esthetiek en budget van onze klant. Omdat we hier bij Homespaces prioriteit geven aan JOU."
+  },
+
+  "services": {
+    "list": {
+      "1": {
+        "title": "Interieur decoratie",
+        "details": "We bieden een eersteklas woondecoratieservice die onze klanten een huiselijke ervaring biedt."
+      },
+      "2": {
+        "title": "Huis beveiliging",
+        "details": "Beveilig uw huis met onze ultramoderne beveiligingssystemen en veiligheidsprotocollen om u altijd te beschermen."
+      },
+      "3": {
+        "title": "Feestplanning",
+        "details": "Laat ons uw feeststemming op gang brengen. Focus op plezier maken en laat de rest van het werk aan ons over."
+      }
+    },
+    "button": "Bekijk diensten"
+  },
+
+  "designs": {
+    "title": "Transformationeel ontwerp",
+    "description": {
+      "1": "Huisdecoratie",
+      "2": "Een onuitgesproken kunst om levenservaringen te creëren die gezond en gezond leven mogelijk maken."
+    },
+    "design": {
+      "1": {
+        "details": "Het Tropisch Museum voor Innovatie, Sydney"
+      },
+      "2": {
+        "details": "Geronimo Barzagli Architecture Studios"
+      }
+    },
+    "button": "onze portfolio"
+  },
+
+  "blogs": {
+    "title": "Blogs",
+    "list": {
+      "1": {
+        "category": "Top lezen",
+        "title": "De beste woninginrichting krijgen"
+      },
+      "2": {
+        "category": "Keuze van de redactie",
+        "title": "Interieurtrends voor 2021"
+      },
+      "3": {
+        "category": "Laatste gelezen",
+        "title": "Hoe huizen te stylen voor pasgetrouwden"
+      }
+    },
+    "button": "Onze blog"
+  },
+
+  "footer": {
+    "company": {
+      "head": "Bedrijf",
+      "list": {
+        "1": "Over ons",
+        "2": "Neem contact op",
+        "3": "Carrières"
+      }
+    },
+    "legal": {
+      "head": "legaal",
+      "list": {
+        "1": "Voorwaarden",
+        "2": "Privacybeleid",
+        "3": "Cookiebeleid"
+      }
+    },
+    "resources": {
+      "head": "Bronnen",
+      "list": {
+        "1": "Blog",
+        "2": "Media",
+        "3": "Veelgestelde vragen"
+      }
+    },
+    "attribution": {
+      "1": "Auteursrecht &copy; 2021, ontworpen door",
+      "2": "en gecodeerd door"
+    }
   }
 }
