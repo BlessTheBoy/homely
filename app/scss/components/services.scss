@@ -8,15 +8,19 @@
     text-align: center;
   }
   ul {
-    text-align: left;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 12.5%;
-    margin-bottom: em(64);
+    margin-bottom: em(16);
 
+    li {
+      margin-bottom: 3rem;
+    }
     img {
-      width: em(60);
+      width: em(40);
+      height: em(40);
     }
     p {
       font-family: var(--sans);
@@ -27,7 +31,7 @@
       color: #a9a39e;
     }
     strong p {
-      margin: rem(20) 0;
+      margin: rem(6) 0 rem(15);
       font-family: var(--lato);
       font-style: normal;
       font-weight: normal;
@@ -51,6 +55,22 @@
 
   @include breakpoint(medium) {
     font-size: 0.8rem;
+    ul {
+      text-align: left;
+      flex-direction: row;
+      margin-bottom: em(64);
+
+      li {
+        margin-bottom: 0;
+      }
+      img {
+        width: em(60);
+        height: em(60);
+      }
+      strong p {
+        margin: rem(20) 0;
+      }
+    }
   }
   @include breakpoint(large) {
     font-size: 1rem;
