@@ -1,37 +1,45 @@
 i18next
   .use(i18nextHttpBackend)
   .use(i18nextBrowserLanguageDetector)
-  .init(
-    {
-      fallbackLng: "en",
-      debug: true,
-      ns: "backend-app",
-      defaultNS: "backend-app",
-      backend: {
-        loadPath: "../assets/localizedContent/{{lng}}.json",
-      },
+  .init({
+    fallbackLng: "en",
+    debug: true,
+    ns: "backend-app",
+    defaultNS: "backend-app",
+    backend: {
+      loadPath: "../assets/localizedContent/{{lng}}.json",
     },
-    function (err, t) {
-      // init set content
+  })
+  .then(function (err, t) {
+    // init set content
+    updateContent();
+    i18next.on("languageChanged", () => {
       updateContent();
-    }
-  );
+    });
+  });
 
 // just set some content and react to language changes
 function updateContent() {
   // get all dom elements with data-i18n attribute
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
+  let docs = document.querySelectorAll("[data-i18n]");
+  console.log(docs);
+  docs.forEach((element) => {
+    // console.log(element);
     // get element id
-    const id = element.id;
+    const locator = element.dataset.i18n;
     // translate the value
-    element.innerHTML = i18next.t(id);
+    element.innerHTML = i18next.t(locator);
   });
 }
 
 function changeLng(lng) {
+  console.log("Changing language to", lng);
   i18next.changeLanguage(lng);
 }
 
-i18next.on("languageChanged", () => {
-  updateContent();
+const languageSelector = document.querySelector("#language");
+console.log(languageSelector);
+
+languageSelector.addEventListener("change", () => {
+  changeLng(languageSelector.value);
 });

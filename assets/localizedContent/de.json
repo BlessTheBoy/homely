@@ -2,5 +2,19 @@
   "title": "hello world in de",
   "test": "lalneonoeij eioeo",
   "saveBtn": "save but",
-  "info": "iklenlof"
+  "info": "iklenlof",
+
+  "header": {
+    "nav": {
+      "1": "Huis",
+      "2": "Diensten",
+      "3": "Over ons",
+      "4": "Blog"
+    }
+  },
+  "banner": {
+    "header": "Nieuwe thuiservaringen creëren",
+    "description": "Wij zijn een interieurbedrijf en we maken graag verse en huiselijke diensten voor al onze klanten.",
+    "button": "Bekijk diensten"
+  }
 }

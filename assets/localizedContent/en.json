@@ -2,5 +2,19 @@
   "title": "hello world",
   "test": "Testing with resources",
   "saveBtn": "save button",
-  "info": "random info"
+  "info": "random info",
+
+  "header": {
+    "nav": {
+      "1": "Home",
+      "2": "Services",
+      "3": "About Us",
+      "4": "Blog"
+    }
+  },
+  "banner":{
+    "header": "Creating Fresh Home Experiences",
+    "description": "We are an interior decor company and we enjoy making fresh and homely services for all our clients.",
+    "button": "View Services"
+  }
 }
