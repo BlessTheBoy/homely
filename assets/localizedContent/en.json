@@ -1,9 +1,4 @@
 {
-  "title": "hello world",
-  "test": "Testing with resources",
-  "saveBtn": "save button",
-  "info": "random info",
-
   "header": {
     "nav": {
       "1": "Home",
@@ -12,9 +7,103 @@
       "4": "Blog"
     }
   },
-  "banner":{
+  "banner": {
     "header": "Creating Fresh Home Experiences",
     "description": "We are an interior decor company and we enjoy making fresh and homely services for all our clients.",
     "button": "View Services"
+  },
+
+  "carousel": {
+    "description": "Our services are tailor made for our customer needs, aesthetics and budget. Because here at Homespaces, we prioritize YOU."
+  },
+
+  "services": {
+    "list": {
+      "1": {
+        "title": "Interior Decoration",
+        "details": "We provide a top notch home decoration service that provides a homely experience for our clients."
+      },
+      "2": {
+        "title": "Home Security",
+        "details": "Secure your home with our state of the art security systems and safety protocols to protect you always."
+      },
+      "3": {
+        "title": "Party Planning",
+        "details": "Let us get your party groove going. Focus on having fun and leave the rest of the work to us."
+      }
+    },
+    "button": "View Services"
+  },
+
+  "designs": {
+    "title": "Transformational Design",
+    "description": {
+      "1": "Home Decor",
+      "2": "An unspoken art of creating living experiences that facilitate healthy and wholesome living."
+    },
+    "design": {
+      "1": {
+        "date": "2021",
+        "details": "The Tropical Musuem for Innovation, Sydney"
+      },
+      "2": {
+        "date": "2021",
+        "details": "Geronimo Barzagli Architecture Studios"
+      }
+    },
+    "button": "Our Portfolio"
+  },
+
+  "blogs": {
+    "title": "Blogs",
+    "list": {
+      "1": {
+        "category": "Top Read",
+        "title": "Getting the best Home Fittings",
+        "author": "Ezekiel Josephat"
+      },
+      "2": {
+        "category": "Editor's Pick",
+        "title": "Interior Design Trends for 2021",
+        "author": "David Adegoke"
+      },
+      "3": {
+        "category": "Latest Read",
+        "title": "How to style homes for newly weds",
+        "author": "Folarin Chukwuebuka"
+      }
+    },
+    "button": "Our Blog"
+  },
+
+  "footer": {
+    "company": {
+      "head": "Company",
+      "list": {
+        "1": "About Us",
+        "2": "Contact Us",
+        "3": "Careers"
+      }
+    },
+    "legal": {
+      "head": "Legal",
+      "list": {
+        "1": "Terms and Conditions",
+        "2": "Privacy policy",
+        "3": "Cookies policy"
+      }
+    },
+    "resources": {
+      "head": "Resources",
+      "list": {
+        "1": "Blog",
+        "2": "Media",
+        "3": "FAQs"
+      }
+    },
+    "attribution": {
+      "1": "Copyright &copy; 2021, designed by",
+      "2": "and coded by"
+    }
   }
 }

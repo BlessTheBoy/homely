@@ -1,0 +1,15 @@
+{
+  "header": {
+    "nav": {
+      "1": "Hogar",
+      "2": "Servicios",
+      "3": "Sobre nosotros",
+      "4": "Blog"
+    }
+  },
+  "banner": {
+    "header": "Creando experiencias hogareñas frescas",
+    "description": "Somos una empresa de decoración de interiores y disfrutamos haciendo servicios frescos y hogareños para todos nuestros clientes.",
+    "button": "Ver servicios"
+  }
+}

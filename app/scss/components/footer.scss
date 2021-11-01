@@ -55,6 +55,7 @@
       svg {
         display: inline-block;
         margin-bottom: em(-8);
+        fill: var(--white);
 
         &:hover {
           fill: var(--pastel-pink);

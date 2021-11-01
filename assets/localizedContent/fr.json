@@ -1,0 +1,15 @@
+{
+  "header": {
+    "nav": {
+      "1": "Accueil",
+      "2": "Services",
+      "3": "À propos",
+      "4": "Blog"
+    }
+  },
+  "banner": {
+    "header": "Créer de nouvelles expériences à la maison",
+    "description": "Nous sommes une entreprise de décoration d'intérieur et nous aimons faire des services frais et chaleureux pour tous nos clients.",
+    "button": "Voir les services"
+  }
+}
