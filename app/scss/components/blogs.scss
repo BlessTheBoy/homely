@@ -1,35 +1,31 @@
 @use "../util" as *;
 
 .blogs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: center;
-  padding: rem(96) 0;
-  font-size: 1rem;
+  padding: rem(96) rem(24);
+  font-size: 0.72rem;
   margin: 0 auto;
   width: 100%;
   position: relative;
   max-width: rem(1440);
 
-  img {
-    padding-right: 10%;
-    width: 90%;
+  &-image {
+    position: relative;
+    margin-bottom: 4rem;
+    h2 {
+      position: absolute;
+      bottom: rem(20);
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3.5rem;
+    }
+    img {
+      width: 100%;
+    }
   }
 
   &-list {
     list-style: none;
     margin-bottom: em(50);
-    padding-right: rem(24);
-    // padding-bottom: rem(100);
-
-    @include breakpoint(medium) {
-      padding-right: 4rem;
-    }
-
-    @include breakpoint(xlarge) {
-      padding-right: 0;
-    }
 
     li {
       padding: em(44) 0 em(42);
@@ -90,7 +86,33 @@
   }
 
   @include breakpoint(medium) {
+    padding: rem(96) 0;
     font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+
+    &-image {
+      margin-bottom: 0;
+      img {
+        padding-right: 10%;
+        width: 90%;
+      }
+    }
+
+    &-list {
+      padding-right: rem(24);
+      // padding-bottom: rem(100);
+
+      @include breakpoint(medium) {
+        padding-right: 4rem;
+      }
+
+      @include breakpoint(xlarge) {
+        padding-right: 0;
+      }
+    }
   }
   @include breakpoint(large) {
     font-size: 0.9rem;
