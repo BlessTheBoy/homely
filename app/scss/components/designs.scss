@@ -3,11 +3,11 @@
 .designs {
   background: var(--pastel-green);
   color: var(--white);
-  padding-top: rem(111);
+  padding: em(100) 0;
   font-family: var(--sans);
   font-style: normal;
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 0.72rem;
 
   &-decor {
     position: absolute;
@@ -18,14 +18,7 @@
   }
 
   .design {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "text image" ". details";
-    align-items: end;
-    margin-bottom: em(242);
-    grid-column-gap: 1rem;
-    grid-row-gap: em(95);
+    margin-bottom: em(100);
 
     &-text {
       grid-area: text;
@@ -37,7 +30,7 @@
         font-weight: 600;
         font-size: em(45);
         line-height: 1.4;
-        margin-bottom: em(60);
+        margin-bottom: em(30);
 
         @include breakpoint(large) {
           font-size: em(48);
@@ -46,18 +39,8 @@
           font-size: em(60);
         }
       }
-
-      div {
-        font-size: em(20);
-        line-height: 2;
-        display: grid;
-        grid-template-columns: 3fr 4fr;
-        align-items: flex-start;
-      }
     }
     &-details {
-      grid-area: details;
-      // margin-top: rem(95);
       font-size: em(20);
       line-height: 2;
 
@@ -67,20 +50,13 @@
       }
     }
     &-img {
-      grid-area: image;
       width: 100%;
+      margin-bottom: 1rem;
     }
   }
   .portfolio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: auto;
-    align-items: center;
-
-    grid-column-gap: 1rem;
-
     &-content {
+      grid-area: ct;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -88,6 +64,7 @@
     }
 
     &-text {
+      margin-bottom: em(80);
       font-size: em(20);
       line-height: 2;
 
@@ -98,11 +75,79 @@
     }
     &-img {
       width: 100%;
+      grid-area: pc;
+      margin-bottom: 1rem;
     }
   }
 
   @include breakpoint(medium) {
     font-size: 0.8rem;
+    padding-top: rem(111);
+    padding-bottom: 0;
+
+    .design {
+      margin-bottom: em(242);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "text image" ". details";
+      align-items: end;
+      margin-bottom: em(242);
+      grid-column-gap: 1rem;
+      grid-row-gap: em(95);
+
+      &-text {
+        grid-area: text;
+
+        h2 {
+          margin-bottom: em(60);
+        }
+
+        div {
+          font-size: em(20);
+          line-height: 2;
+          display: grid;
+          grid-template-columns: 3fr 4fr;
+          align-items: flex-start;
+        }
+      }
+      &-details {
+        grid-area: details;
+      }
+      &-img {
+        grid-area: image;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-rows: auto;
+      grid-template-areas: "ct pc";
+      align-items: center;
+
+      grid-column-gap: 1rem;
+
+      &-content {
+        grid-area: ct;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 52.5%;
+      }
+
+      &-text {
+        margin-bottom: 0;
+      }
+
+      &-img {
+        width: 100%;
+        grid-area: pc;
+        margin-bottom: 0;
+      }
+    }
   }
   @include breakpoint(large) {
     font-size: 0.9rem;
