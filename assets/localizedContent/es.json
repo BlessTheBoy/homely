@@ -11,5 +11,94 @@
     "header": "Creando experiencias hogareñas frescas",
     "description": "Somos una empresa de decoración de interiores y disfrutamos haciendo servicios frescos y hogareños para todos nuestros clientes.",
     "button": "Ver servicios"
+  },
+
+  "carousel": {
+    "description": "Nuestros servicios están hechos a la medida de las necesidades, la estética y el presupuesto de nuestros clientes. Porque aquí en Homespaces, le damos prioridad a USTED."
+  },
+
+  "services": {
+    "list": {
+      "1": {
+        "title": "Decoración de interiores",
+        "details": "Brindamos un servicio de decoración del hogar de primer nivel que brinda una experiencia hogareña para nuestros clientes."
+      },
+      "2": {
+        "title": "Seguridad de casa",
+        "details": "Asegure su hogar con nuestros sistemas de seguridad y protocolos de seguridad de última generación para protegerlo siempre."
+      },
+      "3": {
+        "title": "Planificación de fiestas",
+        "details": "Permítanos poner en marcha su ritmo de fiesta. Concéntrate en divertirte y déjanos el resto del trabajo a nosotros."
+      }
+    },
+    "button": "Ver servicios "
+  },
+
+  "designs": {
+    "title": "Diseño transformacional",
+    "description": {
+      "1": "Decoración del hogar",
+      "2": "Un arte tácito de crear experiencias de vida que faciliten una vida sana y saludable."
+    },
+    "design": {
+      "1": {
+        "details": "El Museo Tropical para la Innovación, Sydney"
+      },
+      "2": {
+        "details": "Estudios de Arquitectura Geronimo Barzagli"
+      }
+    },
+    "button": "nuestro portafolio"
+  },
+
+  "blogs": {
+    "title": "Blogs",
+    "list": {
+      "1": {
+        "category": "Leer más",
+        "title": "Obteniendo los mejores accesorios para el hogar"
+      },
+      "2": {
+        "category": "Selección del editor",
+        "title": "Tendencias de diseño de interiores para 2021"
+      },
+      "3": {
+        "category": "Última lectura",
+        "title": "Cómo diseñar casas para recién casados"
+      }
+    },
+    "button": "Nuestro blog"
+  },
+
+  "footer": {
+    "company": {
+      "head": "Empresa",
+      "list": {
+        "1": "Sobre nosotros",
+        "2": "Contacta con nosotros",
+        "3": "Carreras"
+      }
+    },
+    "legal": {
+      "head": "Legal",
+      "list": {
+        "1": "Términos y condiciones",
+        "2": "Política de privacidad",
+        "3": "Política de cookies"
+      }
+    },
+    "resources": {
+      "head": "Recursos",
+      "list": {
+        "1": "Blog",
+        "2": "Medios de comunicación",
+        "3": "Preguntas más frecuentes"
+      }
+    },
+    "attribution": {
+      "1": "Copyright y copia; 2021, diseñado por",
+      "2": "y codificado por"
+    }
   }
 }
