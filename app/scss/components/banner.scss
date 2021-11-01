@@ -3,7 +3,7 @@
 .banner {
   font-size: 0.72rem;
   background: var(--pastel-green);
-  padding-bottom: rem(208);
+  padding-bottom: 3rem;
   color: var(--white);
   position: relative;
 
@@ -45,6 +45,7 @@
 
   @include breakpoint(medium) {
     font-size: 0.8rem;
+    padding-bottom: rem(208);
   }
   @include breakpoint(large) {
     font-size: 1rem;
