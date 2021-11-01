@@ -32,12 +32,10 @@ function updateContent() {
 }
 
 function changeLng(lng) {
-  console.log("Changing language to", lng);
   i18next.changeLanguage(lng);
 }
 
 const languageSelector = document.querySelector("#language");
-console.log(languageSelector);
 
 languageSelector.addEventListener("change", () => {
   changeLng(languageSelector.value);
