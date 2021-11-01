@@ -94,7 +94,7 @@
       grid-area: op;
 
       .localization {
-    z-index: 3;
+        z-index: 3;
         select {
           background: transparent;
           outline: none;
@@ -151,6 +151,10 @@
 
   @include breakpoint(medium) {
     font-size: 0.8rem;
+
+    &__logo img {
+      width: em(151);
+    }
     &__menuControls {
       display: none;
     }
