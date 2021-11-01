@@ -28,27 +28,23 @@
     <header class="header" id="header">
       <div class="container navbar">
         <a href="/" class="header__logo"
-          ><img src="assets/Logo.png" alt="Homely Logo"
+          ><img src="assets/Logo.png" class="med-desk" alt="Homely Logo" />
+          <img src="assets/mobile-logo.png" class="mobile" alt="Homely Logo"
         /></a>
 
         <!-- Hambuger menu -->
         <div class="header__menuControls" id="menuControls">
-          <img
-            src="assets/icon-hamburger.svg"
-            alt="open menu"
-            class="burger"
-            id="burger"
-            width="16"
-            height="15"
-          />
-          <img
-            src="assets/icon-close-menu.svg"
-            alt="close menu"
-            class="closeMenu"
-            id="closeMenu"
-            width="14"
-            height="15"
-          />
+          <svg viewBox="0 0 16 15" class="burger" id="burger">
+            <g fill="#FFF" fill-rule="evenodd">
+              <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
+            </g>
+          </svg>
+          <svg viewBox="0 0 14 15" class="closeMenu" id="closeMenu">
+            <g fill="#FFF" fill-rule="evenodd">
+              <path d="M2.404.782l11.314 11.314-2.122 2.122L.282 2.904z" />
+              <path d="M.282 12.096L11.596.782l2.122 2.122L2.404 14.218z" />
+            </g>
+          </svg>
         </div>
 
         <nav class="nav" id="nav">
@@ -58,47 +54,45 @@
             <li class="navlink"><a href="#">ABOUT US</a></li>
             <li class="navlink"><a href="#">BLOG</a></li>
           </ul>
+        </nav>
+        <div class="nav__options">
+          <div class="localization">
+            <!-- Change page language -->
+            <select name="language" id="language">
+              <option value="en">ENG</option>
+              <option value="es">SPN</option>
+              <option value="fr">FRA</option>
+              <option value="de">DUS</option>
+            </select>
+          </div>
 
-          <div class="nav__options">
-            <div class="localization">
-              <!-- Change page language -->
-              <select name="language" id="language">
-                <option value="en">ENG</option>
-                <option value="es">SPN</option>
-                <option value="fr">FRA</option>
-                <option value="de">DUS</option>
-              </select>
-            </div>
-
-            <div class="search">
-              <!-- <form action="/search" method="get">
+          <div class="search">
+            <!-- <form action="/search" method="get">
 						<input type="text" name="search" placeholder="Search">
 						<button type="submit">Search</button>
 					</form> -->
-              <svg
-                class="searcIcon"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M15.75 15.75L12.4875 12.4875"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+            <svg
+              class="searcIcon"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M15.75 15.75L12.4875 12.4875"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
     <main class="main">
