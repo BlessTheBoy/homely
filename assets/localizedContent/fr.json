@@ -3,7 +3,7 @@
     "nav": {
       "1": "Accueil",
       "2": "Services",
-      "3": "À propos",
+      "3": "Sur",
       "4": "Blog"
     }
   },
@@ -11,5 +11,94 @@
     "header": "Créer de nouvelles expériences à la maison",
     "description": "Nous sommes une entreprise de décoration d'intérieur et nous aimons faire des services frais et chaleureux pour tous nos clients.",
     "button": "Voir les services"
+  },
+
+  "carousel": {
+    "description": "Nos services sont faits sur mesure pour les besoins de nos clients, l'esthétique et le budget. Parce qu'ici chez Homespaces, nous VOUS priorisons."
+  },
+
+  "services": {
+    "list": {
+      "1": {
+        "title": "Décoration d'intérieur",
+        "details": "Nous fournissons un service de décoration d'intérieur de premier ordre qui offre une expérience chaleureuse à nos clients."
+      },
+      "2": {
+        "title": "Sécurité à la maison",
+        "details": "Sécurisez votre maison avec nos systèmes de sécurité de pointe et nos protocoles de sécurité pour vous protéger toujours."
+      },
+      "3": {
+        "title": "Planification de fête",
+        "details": "Laissez-nous faire avancer votre groove de fête. Concentrez-vous sur le plaisir et laissez-nous le reste du travail."
+      }
+    },
+    "button": "Voir les services"
+  },
+
+  "designs": {
+    "title": "Conception transformationnelle",
+    "description": {
+      "1": "Décoration de maison",
+      "2": "Un art tacite de créer des expériences de vie qui facilitent une vie saine et saine."
+    },
+    "design": {
+      "1": {
+        "details": "Le Musée Tropical pour l'Innovation, Sydney"
+      },
+      "2": {
+        "details": "Studios d'Architecture Geronimo Barzagli"
+      }
+    },
+    "button": "Notre portfolio"
+  },
+
+  "blogs": {
+    "title": "Blogues",
+    "list": {
+      "1": {
+        "category": "Haut de page",
+        "title": "Obtenir les meilleurs accessoires pour la maison"
+      },
+      "2": {
+        "category": "Le choix de l'éditeur",
+        "title": "Tendances du design d'intérieur pour 2021"
+      },
+      "3": {
+        "category": "Dernière lecture",
+        "title": "Comment styliser les maisons pour les jeunes mariés"
+      }
+    },
+    "button": "Notre blog"
+  },
+
+  "footer": {
+    "company": {
+      "head": "Société",
+      "list": {
+        "1": "À propos de nous",
+        "2": "Nous contacter",
+        "3": "Carrières"
+      }
+    },
+    "legal": {
+      "head": "Légal",
+      "list": {
+        "1": "Termes et conditions",
+        "2": "Politique de confidentialité",
+        "3": "Politique de cookies"
+      }
+    },
+    "resources": {
+      "head": "Resources",
+      "list": {
+        "1": "Blog",
+        "2": "Médias",
+        "3": "FAQs"
+      }
+    },
+    "attribution": {
+      "1": "Copyright &copy; 2021, conçu par",
+      "2": "et codé par"
+    }
   }
 }
