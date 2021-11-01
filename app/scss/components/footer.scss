@@ -4,29 +4,23 @@
   font-family: var(--poppins);
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.8;
   background-color: var(--pastel-green);
   color: white;
-  padding: rem(100) 0;
+  padding: rem(60) 0;
 
   .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    grid-template-rows: em(60) auto auto auto;
-    grid-template-areas:
-      "lg cp le rs"
-      "ad cp le rs"
-      "sc . . .";
-    column-gap: 4rem;
-    align-items: start;
-
+    text-align: center;
+    > * {
+      margin-bottom: 2rem;
+    }
     .footer-socials {
-      // margin-top: 2rem;
-      grid-area: sc;
       display: flex;
+      width: fit-content;
+      margin: 0 auto 3rem;
       gap: 2rem;
-      svg {
+      li a svg {
         fill: white;
         transition: all ease-in-out 0.2s;
         &:hover {
@@ -34,24 +28,9 @@
         }
       }
     }
-    .footer-logo {
-      grid-area: lg;
-    }
-    .footer-address {
-      grid-area: ad;
-    }
-    .footer-company {
-      grid-area: cp;
-    }
-    .footer-resources {
-      grid-area: rs;
-    }
-    .footer-legal {
-      grid-area: le;
-    }
   }
 
-  div > p {
+  .content p {
     font-weight: bold;
     font-size: em(17);
     line-height: 1.6;
@@ -66,8 +45,58 @@
     }
   }
 
+  .attribution {
+    font-size: 0.8em;
+    text-align: center;
+
+    a {
+      cursor: pointer;
+
+      svg {
+        display: inline-block;
+        margin-bottom: em(-8);
+
+        &:hover {
+          fill: var(--pastel-pink);
+        }
+      }
+    }
+  }
+
   @include breakpoint(medium) {
     font-size: 0.9rem;
+    padding: rem(100) 0;
+
+    .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-rows: em(60) auto auto auto;
+      grid-template-areas:
+        "lg cp le rs"
+        "ad cp le rs"
+        "sc . . .";
+      column-gap: 4rem;
+      align-items: start;
+
+      .footer-logo {
+        grid-area: lg;
+      }
+      .footer-address {
+        grid-area: ad;
+      }
+      .footer-company {
+        grid-area: cp;
+      }
+      .footer-resources {
+        grid-area: rs;
+      }
+      .footer-legal {
+        grid-area: le;
+      }
+      .footer-socials {
+        grid-area: sc;
+      }
+    }
   }
   @include breakpoint(large) {
     font-size: 1rem;
