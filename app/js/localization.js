@@ -22,7 +22,6 @@ i18next
 function updateContent() {
   // get all dom elements with data-i18n attribute
   let docs = document.querySelectorAll("[data-i18n]");
-  console.log(docs);
   docs.forEach((element) => {
     // console.log(element);
     // get element id
